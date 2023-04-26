@@ -1,5 +1,5 @@
 import React from 'react'
-import {FaBars, FaTimes, FaHome} from 'react-icons/fa'
+import {FaBars, FaTimes} from 'react-icons/fa'
 import { useState } from 'react'
 import { Link } from 'react-scroll'
 
