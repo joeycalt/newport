@@ -1,9 +1,9 @@
 import React from 'react'
-import Budget from '/Users/joeycaltabellotta/newportfolio/src/assets/mybudget.png'
-import GoodVibes from '/Users/joeycaltabellotta/newportfolio/src/assets/goodvibes.png'
-import Fantasy from '/Users/joeycaltabellotta/newportfolio/src/assets/fantasy.png'
-import Recipe from '/Users/joeycaltabellotta/newportfolio/src/assets/recipe.png'
-import Emoji from '/Users/joeycaltabellotta/newportfolio/src/assets/matching.png'
+import Budget from '../assets/mybudget.png'
+import GoodVibes from '../assets/goodvibes.png'
+import Fantasy from '../assets/fantasy.png'
+import Recipe from '../assets/recipe.png'
+import Emoji from '../assets/matching.png'
 
 const Projects = () => {
 

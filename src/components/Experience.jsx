@@ -1,12 +1,12 @@
 import React from 'react'
-import html from '/Users/joeycaltabellotta/newportfolio/src/assets/icons8-html-5-48.png'
-import css from '/Users/joeycaltabellotta/newportfolio/src/assets/icons8-css3-48.png'
-import javascript from '/Users/joeycaltabellotta/newportfolio/src/assets/icons8-javascript-48.png'
-import reactImg from '/Users/joeycaltabellotta/newportfolio/src/assets/icons8-react-48.png'
-import python from '/Users/joeycaltabellotta/newportfolio/src/assets/icons8-python-48.png'
-import bootstrap from '/Users/joeycaltabellotta/newportfolio/src/assets/icons8-bootstrap-48.png'
-import tailwind from '/Users/joeycaltabellotta/newportfolio/src/assets/icons8-tailwindcss-48.png'
-import github from '/Users/joeycaltabellotta/newportfolio/src/assets/icons8-github-48 (1).png'
+import html from '../assets/html.png'
+import css from '../assets/css.png'
+import javascript from '../assets/javascript.png'
+import reactImg from '../assets/reactimg.png'
+import python from '../assets/python.png'
+import bootstrap from '../assets/bootstrap.png'
+import tailwind from '../assets/tailwind.png'
+import github from '../assets/github.png'
 
 const Experience = () => {
 

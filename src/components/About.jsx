@@ -1,5 +1,5 @@
 import React from 'react'
-import Rav from '/Users/joeycaltabellotta/newportfolio/src/assets/qVUov4.Joey-Calt-About.png'
+import Rav from '../assets/rav.png'
 
 const About = () => {
   return (
