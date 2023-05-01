@@ -22,7 +22,7 @@ const About = () => {
           When I’m not coding, I enjoy going on day trips with my girlfriend and our puppy, Ravioli. You can also catch me on the golf course trying my hardest to not lose more than 10 golf balls.  
           </p>
           </p>
-          <img src={Rav} alt='' className='mx-auto h-80 w-80'/>
+          <img src={Rav} alt='' className='w-1/2 mt-10 mx-auto md:w-80'/>
         </div>
       </div>
     </div>
