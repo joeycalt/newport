@@ -62,18 +62,18 @@ const Experience = () => {
   ]
 
   return (
-    <div name='Experience' className='bg-black w-full h-screen'>
-      <div className='max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white pt-40 sm:pt-0'>
+    <div name='Experience' className='bg-black w-full h-screen p-4 px-10 py-20'>
+      <div className='max-w-screen-lg mx-auto p-4 flex flex-col justify center w-full h-full text-white'>
         <div>
-          <p className='text-4xl font-bold inline text-green-400'>Experience</p>
-          <p className='sm:py-3 text-sm'>Technologies I enjoy working with.. to learn more check out my  
+          <p className='md:text-6xl text-3xl font-bold inline text-green-400'>Experience</p>
+          <p className='sm:py-3 text-base'>Technologies I enjoy working with.. to learn more check out my  
           <a href='/Joey-Caltabellotta-Resume-2022.pdf'
           download 
           target='_blank'
           rel="noreferrer"
           className='text-green-400 font-bold'> Resume</a></p>
         </div>
-        <div className='w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0'>
+        <div className='w-full grid grid-cols-2 sm:grid-cols-3 gap-4 text-center py-8 px-12 sm:px-0'>
 
       {
         techs.map(({id, src, title, style}) => (

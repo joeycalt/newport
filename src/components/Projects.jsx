@@ -52,13 +52,13 @@ const Projects = () => {
 
 
   return (
-    <div name= 'Projects' className='bg-black w-full text-white md:h-screen'>
+    <div name= 'Projects' className='bg-black w-full text-white md:h-screen p-4 px-5'>
         <div className='max-w-screen-lg sm:p-4 p-9 mx-auto flex flex-col justify-center w-full h-full'>
             <div className='pt-10 sm:mt-4'>
-            <p className='text-4xl font-bold inline text-green-400'>
+            <p className='md:text-6xl text-3xl font-bold inline text-green-400'>
                 Projects
             </p>
-            <p className='py-3'>
+            <p className='py-3 text-base pb-10'>
                 Check out some of my work!
             </p>
         </div>
