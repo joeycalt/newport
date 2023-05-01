@@ -5,7 +5,7 @@ const Contact = () => {
     <div name='Contact' className='w-full h-screen bg-black text-white p-4 px-10'>
         <div className='flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full'>
             <div className='pb-8'>
-                <p className='md:text-6xl text-3xl font-bold inline text-green-400'>Contact</p>
+                <p className='md:text-6xl text-3xl pt-5 font-bold inline text-green-400'>Contact</p>
                 <p className='py-3 text-base'>Submit a form below to connect</p>
             </div>
             <div className=''>
