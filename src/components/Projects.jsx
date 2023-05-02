@@ -1,9 +1,7 @@
 import React from 'react'
 import Budget from '../assets/mybudget.png'
 import GoodVibes from '../assets/goodvibes.png'
-import Fantasy from '../assets/fantasy.png'
 import Recipe from '../assets/recipe.png'
-import Emoji from '../assets/matching.png'
 
 const Projects = () => {
 
