@@ -32,22 +32,6 @@ const Projects = () => {
             live: 'https://main--eloquent-cajeta-bbeeb0.netlify.app/',
             code: 'https://github.com/joeycalt/RecipeBox'
         },
-        {
-            id: 4,
-            src: Fantasy,
-            title: 'Catch up on some facts.',
-            skills: 'React | Bootstrap | API | MongoDB',
-            live: 'https://leagueofordinarymen.herokuapp.com/',
-            code: 'https://github.com/joeycalt/fantasy'
-        },
-        {
-            id: 5,
-            src: Emoji,
-            title: 'Memory Matching with emojis!',
-            skills: 'JavaScript | CSS | HTML',
-            live: 'https://joeycalt.github.io/Matching-project/',
-            code: 'https://github.com/joeycalt/Matching-project'
-        },
     ]
 
 
@@ -66,8 +50,8 @@ const Projects = () => {
         <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-4 sm:px-0'>
         {
             projects.map(({id, src, title, skills, live, code}) => (
-            <div key={id} className='shadow-md shadow-gray-600 rounded-lg'>
-                <img src={src} alt='' className='rounded-md duration-200 hover:scale-105'/> <p className='mt-4 text-center text-sm'>{title}</p>
+            <div key={id} className='shadow-md shadow-gray-600 rounded-lg w-90'>
+                <img src={src} alt='' className='rounded-md duration-200 hover:scale-105 w-90'/> <p className='mt-4 text-center text-sm'>{title}</p>
                 <div className='flex items-center justify-center'>
                     <a href={live}
                     target='_blank'
