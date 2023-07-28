@@ -41,7 +41,7 @@ const Social = () => {
             Resume <BsFillPersonLinesFill size={30} className='text-white'/>
             </>
             ),
-            href: '/Joey-Caltabellotta-Resume-2022.pdf',
+            href: '/Joey-Caltabellotta-Resume-2023.pdf',
             style: 'rounded-br-md',
             download: true
         },
