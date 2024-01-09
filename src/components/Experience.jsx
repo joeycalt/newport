@@ -67,7 +67,7 @@ const Experience = () => {
         <div>
           <p className='md:text-6xl text-3xl font-bold inline text-green-400'>Experience</p>
           <p className='sm:py-3 text-base'>Technologies I enjoy working with.. to learn more check out my  
-          <a href='/Joey-Caltabellotta-Resume-2022.pdf'
+          <a href='/Joey-Caltabellotta-Resume-2024.pdf'
           download 
           target='_blank'
           rel="noreferrer"
