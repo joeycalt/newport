@@ -1,7 +1,7 @@
 import React from 'react'
-import Udemy from '/Users/joeycaltabellotta/Desktop/newportfolio/src/assets/udemy.jpg'
-import GA from '/Users/joeycaltabellotta/Desktop/newportfolio/src/assets/GA.png'
-import Webflow from '/Users/joeycaltabellotta/Desktop/newportfolio/src/assets/webflow.png'
+import Udemy from '../assets/udemy.jpg'
+import GA from '../assets/GA.png'
+import Webflow from '../assets/webflow.png'
 
 const Certificates = () => {
 
