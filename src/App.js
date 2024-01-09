@@ -1,4 +1,5 @@
 import About from './components/About';
+import Certificates from './components/Certificates';
 import Contact from './components/Contact';
 import Experience from './components/Experience';
 import Home from './components/Home';
@@ -12,6 +13,7 @@ function App() {
      <NavBar />
      <Home />
      <Projects />
+     <Certificates />
      <About />
      <Experience />
      <Contact />
