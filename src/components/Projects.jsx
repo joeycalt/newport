@@ -19,7 +19,7 @@ const Projects = () => {
             src: GoodVibes,
             title: 'The simple, efficient way to compare sports betting odds across Sportsbooks.',
             skills: 'JavaScript | API | React | Bootstrap',
-            live: 'https://main--calm-chebakia-b898c4.netlify.app/',
+            live: 'https://goodvibesbetting.netlify.app/',
             code: 'https://github.com/joeycalt/GoodVibes-Betting'
         },
         {
@@ -27,7 +27,7 @@ const Projects = () => {
             src: Recipe,
             title: 'Tired of the same old meals? Mix it up with RecipeBOX!',
             skills: 'React | Bootstrap | API',
-            live: 'https://main--eloquent-cajeta-bbeeb0.netlify.app/',
+            live: 'https://randomrecipebox.netlify.app/',
             code: 'https://github.com/joeycalt/RecipeBox'
         },
     ]
