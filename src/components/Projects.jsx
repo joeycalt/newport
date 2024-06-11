@@ -34,34 +34,34 @@ const Projects = () => {
 
 
   return (
-    <div name= 'Projects' className='bg-black w-full text-white md:h-screen p-4 px-5'>
-        <div className='max-w-screen-lg sm:p-4 p-9 mx-auto flex flex-col justify-center w-full h-full'>
-            <div className='pt-10 sm:mt-4'>
+    <div name= 'Projects' className='bg-black w-full text-white md:h-screen p-6 px-5'>
+        <div className='max-w-screen-lg sm:p-4 p-9 mx-auto flex flex-col justify-center w-110 h-90'>
+            <div className='pt-5 sm:mt-4'>
             <p className='md:text-6xl text-3xl font-bold inline text-green-400'>
                 Projects
             </p>
-            <p className='py-3 text-base pb-10'>
+            <p className='py-3 text-xl pb-10'>
                 Check out some of my work!
             </p>
         </div>
 
-        <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-4 sm:px-0'>
+        <div className='grid sm:grid-cols-2 md:grid-cols-3 px-8 sm:px-0 gap-10'>
         {
             projects.map(({id, src, title, skills, live, code}) => (
-            <div key={id} className='shadow-md shadow-gray-600 rounded-lg w-80'>
-                <img src={src} alt='' className='rounded-md duration-200 hover:scale-105 w-90'/> <p className='mt-4 text-center text-sm'>{title}</p>
+            <div key={id} className='shadow-md shadow-gray-600 rounded-lg w-100 h-100'>
+                <img src={src} alt='' className='rounded-md duration-200 hover:scale-105 w-100 h-100'/> <p className='mt-4 text-center text-lg'>{title}</p>
                 <div className='flex items-center justify-center'>
                     <a href={live}
                     target='_blank'
                     rel='noreferrer'>
-                <button className='w-1/2 m-2 px-4 duration-200 hover:scale-105 text-green-400'>
+                <button className='w-1/2 m-2 px-4 duration-200 hover:scale-105 text-green-400 text-xl'>
                         Live
                     </button>
                     </a>
                     <a href={code}
                     target='_blank'
                     rel='noreferrer'>
-                    <button className='w-1/2 m-2 px-4 pt-1/2 duration-200 hover:scale-105 text-green-400'>
+                    <button className='w-1/2 m-2 px-4 pt-1/2 duration-200 hover:scale-105 text-green-400 text-xl'>
                         Code
                     </button>
                     </a>

@@ -22,8 +22,8 @@ const Certificates = () => {
 
 
   return (
-    <div name= 'Certificates' className='bg-black w-full text-white md:h-screen p-4 px-5'>
-        <div className='max-w-screen-lg sm:p-4 p-9 mx-auto flex flex-col justify-center w-full h-full'>
+    <div name= 'Certificates' className='bg-black w-full text-white md:h-screen p-2 px-5'>
+        <div className='max-w-screen-lg sm:p-4 p-9 mx-auto flex flex-col justify-center w-full'>
             <div className='pt-10 sm:mt-4'>
             <p className='md:text-6xl text-3xl font-bold inline text-green-400'>
                 Certificates
@@ -33,11 +33,11 @@ const Certificates = () => {
             </p>
         </div>
 
-        <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-4 sm:px-0'>
+        <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-10 px-4 sm:px-0'>
         {
             certificates.map(({id, src}) => (
             <div key={id}>
-                <img src={src} alt='' className='rounded-md duration-200 hover:scale-105 h-60 w-190'/>
+                <img src={src} alt='' className='rounded-md duration-200 hover:scale-105 w-110 h-100'/>
             </div>
                     
             ))
