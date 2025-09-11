@@ -6,7 +6,9 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily :{
-      signature: ['Allura'],
+      'inter': ['Inter', 'sans-serif'],
+      'work-sans': ['Work Sans', 'sans-serif'],
+      'silkscreen': ['Silkscreen', 'sans-serif'],
     }
   },
   plugins: [],

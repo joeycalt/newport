@@ -1,25 +1,47 @@
-import About from './components/About';
-import Certificates from './components/Certificates';
-import Contact from './components/Contact';
-import Experience from './components/Experience';
-import Home from './components/Home';
-import NavBar from './components/NavBar'
-import Projects from './components/Projects';
-import Social from './components/Social';
+import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
+import Budget from './pages/Budget';
+import Recipe from './pages/Recipe';
+import Goodvibes from './pages/Goodvibes'; 
+import About from './pages/About';
+import Contact from './pages/Contact';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import Cursor from './components/cursor/Cursor';
+import LoadingScreen from './components/LoadingScreen';
 
 function App() {
-  return (
-    <div>
-     <NavBar />
-     <Home />
-     <Projects />
-     <Certificates />
-     <About />
-     <Experience />
-     <Contact />
+  const [loading, setLoading] = useState(true);
 
-     <Social />
-    </div>
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    },4000);
+
+    return () => clearTimeout(timer); // Cleanup function
+  }, []);
+
+  if (loading) {
+    return <LoadingScreen />;
+  }
+
+  return (
+    <Router>
+      <Cursor />
+      <Navbar />
+      <div>
+        <Routes>
+          <Route path="/" element={<Home />} /> 
+          <Route path="/mybudget" element={<Budget />} />
+          <Route path="/recipebox" element={<Recipe />} /> 
+          <Route path="/goodvibes" element={<Goodvibes />} /> 
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </div>
+      <Footer />
+    </Router>
   );
 }
 

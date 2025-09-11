@@ -2,12 +2,157 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   html {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-weight: 300;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    overflow-x: hidden;
+    height: 100%;
+    overflow-y: auto; /* or consider 'hidden' if you want to control all scrolling via JS */
   }
+  body {
+  font-family: 'Inter', sans-serif;
 }
+h1 {
+  font-family: 'Work Sans', sans-serif;
+},
+.silkscreen {
+  font-family: 'Silkscreen', sans-serif;
+}
+
+.initial-position {
+  transform: translateY(100px);
+  opacity: 0;
+}
+
+.slide-up {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+  scroll-behavior: smooth;
+}
+
+.scroll-snap-item {
+  scroll-snap-align: start;
+}
+
+.scroll-snap-container {
+  scroll-snap-type: x mandatory; /* For horizontal snap scrolling */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  overflow-y: hidden; /* Disable vertical scrolling */
+  scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+[data-scroll-container] {
+  overflow: hidden; /* Prevent default scrollbars */
+}
+
+[data-scroll] {
+  display: flex;
+}
+
+.scrollbar-hide {
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Hide scrollbar in Chrome */
+}
+
+section {
+  scroll-snap-align: start; /* Ensure sections align to the viewport */
+  min-height: 100%; 
+}
+
+.hero {
+  scroll-snap-align: start;
+  height: 100vh;
+}
+
+/* Projects horizontal scroll container */
+.projects-container {
+  display: flex;
+  gap: 50px;
+  overflow-x: hidden;
+  scroll-snap-type: x mandatory; /* Enable horizontal snap for cards */
+  scrollbar-width: none; /* Hide scrollbar for a cleaner look */
+  -ms-overflow-style: none; /* IE scrollbar hiding */
+}
+
+.projects-container::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for WebKit browsers */
+}
+
+
+.horizontal-scroll-container {
+  display: flex;
+  position: relative;
+  height: 100vh; /* Full viewport height for seamless transition */
+  overflow: hidden; /* Prevent scrolling past the boundaries */
+}
+
+
+.projects-wrapper {
+  display: flex;
+  flex-direction: row;
+  height: 100%; /* Match viewport height */
+  width: max-content; /* Allow content to extend horizontally */
+  transform: translateX(0); /* Start position */
+  transition: transform 0.2s ease-out; /* Smooth transition */
+  will-change: transform;
+}
+
+.project-card {
+  flex: 0 0 100vw; /* Each project spans full viewport width */
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #393939;
+  color: white;
+  font-size: 2rem;
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+}
+
+#projects {
+  height: 100%; /* Full viewport height */
+  position: relative;
+  overflow: hidden; /* Prevent vertical overflow */
+}
+
+.project {
+  flex: 0 0 100vw; /* Each project takes up full viewport width */
+  height: 100%;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2rem;
+}
+
+}
+
+
