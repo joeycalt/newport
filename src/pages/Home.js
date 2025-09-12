@@ -5,7 +5,7 @@ import Beat from '/Users/joeycaltabellotta/Desktop/newportfolio/src/assets/BeatT
 import Recipe from '/Users/joeycaltabellotta/Desktop/newportfolio/src/assets/RecipeBox-Thumb.png';
 import Main from '/Users/joeycaltabellotta/Desktop/newportfolio/src/assets/JOEY-HOME.jpg';
 import Arrow from '/Users/joeycaltabellotta/Desktop/newportfolio/src/assets/Group 1.png';
-import '/Users/joeycaltabellotta/Desktop/newportfolio/src/index.css';
+import '../index.css';
 import {motion, useInView} from "framer-motion";
 
 const Home = () => {
