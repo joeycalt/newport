@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import marioGif from '/Users/joeycaltabellotta/Desktop/newportfolio/src/assets/mario.gif'
+import marioGif from '../assets/mario.gif'
 
 const LoadingScreen = () => {
   return (
