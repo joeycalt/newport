@@ -1,5 +1,5 @@
 import React from 'react';
-import BudgetImgmobile from '/Users/joeycaltabellotta/Desktop/newportfolio/src/assets/mybudgetmobile.png';
+import BudgetImgmobile from '../assets/mybudgetmobile.png';
 import BudgetImg from '/Users/joeycaltabellotta/Desktop/newportfolio/src/assets/image 2.png';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
