@@ -1,5 +1,5 @@
 import React from 'react';
-import recipeImg from '/Users/joeycaltabellotta/Desktop/newportfolio/src/assets/recipe.png';
+import recipeImg from '../assets/recipe.png';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import Arrow from '../assets/Group 2.png';

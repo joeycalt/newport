@@ -1,5 +1,5 @@
 import React from 'react';
-import BTOImg from '/Users/joeycaltabellotta/Desktop/newportfolio/src/assets/beattheodds.png';
+import BTOImg from '../assets/beattheodds.png';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import Arrow from '../assets/Group 2.png';

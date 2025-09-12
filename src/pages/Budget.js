@@ -1,6 +1,6 @@
 import React from 'react';
 import BudgetImgmobile from '../assets/mybudgetmobile.png';
-import BudgetImg from '/Users/joeycaltabellotta/Desktop/newportfolio/src/assets/image 2.png';
+import BudgetImg from '../assets/image 2.png';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import Arrow from '../assets/Group 2.png';
