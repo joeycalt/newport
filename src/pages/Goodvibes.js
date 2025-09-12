@@ -32,19 +32,6 @@ const Goodvibes = () => {
           }
         }
       };
-    
-      const imageVariants = {
-        initial: { scale: 0.5, opacity: 0 },
-        animate: {
-          scale: 1,
-          opacity: 1,
-          transition: {
-            type: "spring",
-            stiffness: 300,
-            damping: 20
-          }
-        }
-      };
 
   return (
     <div className=""> 
@@ -93,7 +80,7 @@ const Goodvibes = () => {
                 <p>A classroom project ignited my drive for Beat the Odds, a sports betting app. Working with a UX/UI designer, I refined its sleek design and added features in my spare time. I built a responsive interface with real-time API odds, ensuring a smooth user experience through diligent QA. This project showcases my knack for creating engaging, data-driven tools for sports fans.</p>
             </div>
             </div>
-            <div className='pl-[32px] md:pl-[32px] pt-[50px] md:pt-[0px] md:pl-[60px] md:pr-20'>
+            <div className='pl-[32px] pt-[50px] md:pt-[0px] md:pl-[60px] md:pr-20'>
                 <h3 className='text-[18px] md:text-[24px] pb-[58px]'>Skills</h3>
                 <div className="flex flex-col text-[30px] md:text-[40px]">
   <span>React</span>

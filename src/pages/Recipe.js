@@ -32,19 +32,6 @@ const Recipe = () => {
           }
         }
       };
-    
-      const imageVariants = {
-        initial: { scale: 0.5, opacity: 0 },
-        animate: {
-          scale: 1,
-          opacity: 1,
-          transition: {
-            type: "spring",
-            stiffness: 300,
-            damping: 20
-          }
-        }
-      };
 
   return (
     <div className=""> 
@@ -94,7 +81,7 @@ const Recipe = () => {
                 <p>What began as a school assignment blossomed into Recipe Box, a lively meal planning app inspired by social media algorithms. In my spare time, I’ve enhanced its vibrant design and added features to streamline recipe discovery through real-time API calls. Built with JavaScript React, CSS, and Bootstrap, Recipe Box delivers an engaging, user-friendly experience, showcasing my dedication to crafting intuitive, API-driven apps for culinary enthusiasts.</p>
             </div>
             </div>
-            <div className='pl-[32px] md:pl-[32px] pt-[50px] md:pt-[0px] md:pl-[60px] md:pr-20'>
+            <div className='pl-[32px] pt-[50px] md:pt-[0px] md:pl-[60px] md:pr-20'>
                 <h3 className='text-[18px] md:text-[24px] pb-[58px]'>Skills</h3>
                 <div className="flex flex-col text-[30px] md:text-[40px]">
   <span>React</span>

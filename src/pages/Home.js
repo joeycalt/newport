@@ -173,7 +173,7 @@ const Home = () => {
             {/* Projects Section */}
             <section id="projects" ref={projectsRef} className="h-[350px] pt-[70px] md:h-[800px] bg-[#202020] w-full md:pt-[100px] pr-[20px] horizontal-scroll-container" data-scroll-section data-scroll>
                 <div className='block w-[450px] px-[32px] md:flex md:flex-row md:w-[950px]'>
-            <h1 className="text-[60px] md:pb-[30px] md:text-[30px] md:text-[90px] md:pb-[0px] text-white font-light md:pl-[64px] md:pr-[64px]">
+            <h1 className="text-[60px] md:pb-[30px] md:text-[90px]  text-white font-light md:pl-[64px] md:pr-[64px]">
                                 <motion.span 
                                     initial={{ x: '-100%', opacity: 0 }}
                                     animate={hasProjectsAnimated ? { x: 0, opacity: 1 } : {}} // Ensure this also only animates once

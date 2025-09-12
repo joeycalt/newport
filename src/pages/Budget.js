@@ -33,19 +33,6 @@ const Budget = () => {
           }
         }
       };
-    
-      const imageVariants = {
-        initial: { scale: 0.5, opacity: 0 },
-        animate: {
-          scale: 1,
-          opacity: 1,
-          transition: {
-            type: "spring",
-            stiffness: 300,
-            damping: 20
-          }
-        }
-      };
 
   return (
     <div className=""> 
@@ -95,7 +82,7 @@ const Budget = () => {
                 <p>What started as a school assignment became a passion project. Influenced by many financial platforms out in the world today, I have been working with the designer to improve overall look and feel and add additional features in my spare time.</p>
             </div>
             </div>
-            <div className='pl-[32px] md:pl-[32px] pt-[50px] md:pt-[0px] md:pl-[60px] md:pr-20'>
+            <div className='pl-[32px] pt-[50px] md:pt-[0px] md:pl-[60px] md:pr-20'>
                 <h3 className='text-[18px] md:text-[24px] pb-[58px]'>Skills</h3>
                 <div className="flex flex-col text-[30px] md:text-[40px]">
   <span>Python</span>
