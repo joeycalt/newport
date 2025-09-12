@@ -1,4 +1,4 @@
 html {
-    cursor: url('/Users/joeycaltabellotta/Desktop/newportfolio/public/cursor.png'), auto;
+    cursor: url('/public/cursor.png'), auto;
     image-rendering: pixelated;/* Use a relative path */
 }
