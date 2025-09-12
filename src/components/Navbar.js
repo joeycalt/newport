@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 const NavBar = ({ theme, toggleTheme }) => {
-  const [dropdown, setDropdown] = useState(false);
   const [scrollY, setScrollY] = useState(0);
   const [showNav, setShowNav] = useState(true);
 
