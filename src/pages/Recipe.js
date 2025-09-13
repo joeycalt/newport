@@ -1,10 +1,14 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import recipeImg from '../assets/recipe.png';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import Arrow from '../assets/Group 2.png';
 
 const Recipe = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
     const sectionVariants = {
         initial: { opacity: 0, y: 50, scale: 0.9 },

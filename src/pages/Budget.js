@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import BudgetImgmobile from '../assets/mybudgetmobile.png';
 import BudgetImg from '../assets/image 2.png';
 import { motion } from 'framer-motion';
@@ -6,6 +6,10 @@ import { Link } from 'react-router-dom';
 import Arrow from '../assets/Group 2.png';
 
 const Budget = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
     const sectionVariants = {
         initial: { opacity: 0, y: 50, scale: 0.9 },

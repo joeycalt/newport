@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import Home from './pages/Home';
 import Budget from './pages/Budget';
 import Recipe from './pages/Recipe';
@@ -10,6 +10,16 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Cursor from './components/cursor/Cursor';
 import LoadingScreen from './components/LoadingScreen';
+
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to top on route change
+  }, [pathname]);
+
+  return null;
+};
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -28,6 +38,7 @@ function App() {
 
   return (
     <Router>
+      <ScrollToTop />
       <Cursor />
       <Navbar />
       <div>
