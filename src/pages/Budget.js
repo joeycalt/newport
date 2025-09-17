@@ -97,7 +97,7 @@ const Budget = () => {
 </div>
             
         <div className='pt-20'>
-          <a href='https://mybudgetapp.herokuapp.com/' target="_blank" rel="noopener noreferrer">
+          <a href='https://web-production-f2a58.up.railway.app/' target="_blank" rel="noopener noreferrer">
             <button className='px-6 py-3 my-6 rounded-full border border-blue-700 bg-white text-[18px] text-blue-700 font-normal hover:bg-blue-700 hover:text-white hover:duration-500 '>View Live Site</button>
             </a>
         </div>
