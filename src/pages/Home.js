@@ -217,7 +217,7 @@ const Home = () => {
                                             <div className="pl-[20px] md:p-[20px]">
                                                 <div className='flex justify-between'>
                                                     <p className="pt-[25px] text-[30px] md:text-[40px] md:pt-[0px] font-normal mb-2 text-white">{title}</p>
-                                                    <p className='pt-[25px] text-[16px] text-red-500 animate-pulse'>{title2}</p>
+                                                    <p className='md:pt-[25px] text-[12px] md:text-[16px] pt-[40px] mr-[10px] text-red-500 animate-pulse'>{title2}</p>
                                                 </div>
                                                 <hr className="border-gray-500 pt-[16px] md:pt-[0px]" />
                                                 <div className='pt-[16px] md:pt-[0px] pb-[30px] md:pb-[0px]'>
