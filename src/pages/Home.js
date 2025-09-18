@@ -18,7 +18,8 @@ const Home = () => {
         {
             id: 1,
             src: Budget,
-            title: 'MyBudget',
+            title: 'MyBudget', 
+            title2: 'Live & Improving',
             skills: 'Python',
             skills2: 'Django',
             skills3: 'SQL',
@@ -198,16 +199,15 @@ const Home = () => {
                         animate={hasProjectsAnimated ? "animate" : "initial"} // Here's the key change
                     >
                         <div className="flex flex-col md:flex md:flex-row space-x-[50px] pb-[40px] projects-wrapper" data-scroll data-scroll-direction="horizontal">
-                            
                             <div className="overflow pt-[34px] md:w-[950px]  space-x-[50px] scrollbar-hide md:overflow-x-visible" data-scroll data-scroll-direction="horizontal">
-                            {projects.map(({ id, src, title, skills, skills2, skills3, path }) => (
+                            {projects.map(({ id, src, title, title2, skills, skills2, skills3, path }) => (
                                 <Link to={path} key={id}>
                                     <div className="w-[305px] h-[405px] flex-none md:w-[515px] md:h-[560px] bg-[#393939] rounded-lg overflow-hidden">
                                         <motion.span 
                                             initial={{ x: '100%', opacity: 0 }}
                                             animate={hasProjectsAnimated ? { x: 0, opacity: 1 } : {}}
                                             transition={{ duration: 1, delay: .2, ease: "easeOut" }}
-                                        >
+                                            >
                                             <motion.div 
                                             key={id}
                                             variants={cardVariants}
@@ -215,7 +215,10 @@ const Home = () => {
                                             >
                                             <img src={src} alt={title} className="object-cover w-[305px] h-[239px] md:w-[515px] md:h-[415px]" />
                                             <div className="pl-[20px] md:p-[20px]">
-                                                <p className="pt-[25px] text-[30px] md:text-[40px] md:pt-[0px] font-normal mb-2 text-white">{title}</p>
+                                                <div className='flex justify-between'>
+                                                    <p className="pt-[25px] text-[30px] md:text-[40px] md:pt-[0px] font-normal mb-2 text-white">{title}</p>
+                                                    <p className='pt-[25px] text-[16px] text-red-500 animate-pulse'>{title2}</p>
+                                                </div>
                                                 <hr className="border-gray-500 pt-[16px] md:pt-[0px]" />
                                                 <div className='pt-[16px] md:pt-[0px] pb-[30px] md:pb-[0px]'>
                                                 <span className="text-white font-silkscreen font-normal text-[16px] px-[4px]">{skills}•</span>
